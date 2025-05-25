@@ -1,0 +1,10 @@
+{
+  "cSpell.words": ["adjency"],
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": false,
+    "dart": false
+  }
+}
