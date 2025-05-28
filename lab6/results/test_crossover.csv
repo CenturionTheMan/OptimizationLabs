@@ -49,3 +49,13 @@ Rep,N,CrossoverMethod,SolutionCost,Solution Weight
 3,300,TwoPoint,1064,832
 4,50,SinglePoint,224,144
 4,50,TwoPoint,178,132
+4,100,SinglePoint,400,258
+4,100,TwoPoint,357,286
+4,150,SinglePoint,575,401
+4,150,TwoPoint,554,406
+4,200,SinglePoint,755,581
+4,200,TwoPoint,734,522
+4,250,SinglePoint,889,689
+4,250,TwoPoint,843,679
+4,300,SinglePoint,1037,823
+4,300,TwoPoint,1017,832
