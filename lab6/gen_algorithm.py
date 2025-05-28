@@ -145,7 +145,7 @@ class GeneticKnapsack:
             if current.fitness > best.fitness:
                 best = current.copy()
 
-            print(f"Gen {gen}: Best fitness = {current.fitness}, Avg fitness = {self.evaluate_population(population):.2f}, Best weight = {current.sum_weight}")
+            #print(f"Gen {gen}: Best fitness = {current.fitness}, Avg fitness = {self.evaluate_population(population):.2f}, Best weight = {current.sum_weight}")
 
         selected_costs = self.costs[best.genes == 1]
         selected_weights = self.weights[best.genes == 1]
