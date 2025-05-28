@@ -1,14 +1,8 @@
-import queue
 import numpy as np
-from typing import List, Tuple
-import math
-import datetime
 import pandas as pd
-import itertools
 from itertools import product
 from random_gen import RandomNumberGenerator
 from gen_algorithm import GeneticKnapsack
-from typing import Literal
 import time
 from multiprocessing import Pool, cpu_count
 from tqdm import tqdm
@@ -18,18 +12,13 @@ np.random.seed(seed)
 random_gen = RandomNumberGenerator(seedVaule=seed)
 
 
-n = 1000
+n = 100
 C, W, B = random_gen.generate_input(n=n)
 
 SELECTION_METHOD = 'Tournament'
 CROSSOVER_METHOD = 'SinglePoint'
 TOURNAMENT_SIZE = 5
-GENERATIONS = 1000  # reduce for speed
-
-population_sizes = [25, 50, 100, 200]
-mutation_rates = [0.01, 0.05, 0.1, 0.2]
-crossover_rates = [0.1, 0.3, 0.5, 0.7, 0.9]
-
+GENERATIONS = 5000  # reduce for speed
 
 
 def run_experiment(params):
@@ -65,6 +54,9 @@ def run_experiment(params):
 
 if __name__ == '__main__':
     print(f"Running experiments with {cpu_count()} CPU cores...")
+    population_sizes = [200]
+    mutation_rates = [0.05, 0.1, 0.15]
+    crossover_rates = [0.6, 0.7, 0.8]
 
     param_combinations = list(product(population_sizes, mutation_rates, crossover_rates))
     with Pool(cpu_count()) as pool:
