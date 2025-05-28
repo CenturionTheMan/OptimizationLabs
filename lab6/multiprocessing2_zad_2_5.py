@@ -20,8 +20,8 @@ random_gen = RandomNumberGenerator(seedVaule=seed)
 GENERATIONS = 1000
 REPEATS = 5
 
-df = pd.read_csv('results/combinations_results.csv', delimiter=',')
-df_sorted = df.sort_values(by='solution_cost', ascending=False)
+df = pd.read_csv('results/proper_combinations_results.csv', delimiter=',')
+df_sorted = df.sort_values(by='avg_solution_cost', ascending=False)
 best_solution = df_sorted.iloc[0]
 
 BEST_POP = best_solution['population_size']
