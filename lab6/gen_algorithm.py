@@ -7,7 +7,6 @@ class Individual:
     genes: np.ndarray
     fitness: int
     sum_weight: int
-
     def copy(self):
         return Individual(self.genes.copy(), self.fitness, self.sum_weight)
 
@@ -40,9 +39,10 @@ class GeneticKnapsack:
         while len(population) < self.population_size:
             genes = np.random.randint(0, 2, size=genes_length)
             weight = np.sum(self.weights * genes)
-            if weight <= self.max_weight:
-                fitness = np.sum(self.costs * genes)
-                population.append(Individual(genes, fitness, weight))
+            fitness = np.sum(self.costs * genes)
+            ind = Individual(genes, fitness, weight)
+            self.fix_individual(ind)
+            population.append(ind)
         return population
 
     def evaluate_population(self, population: List[Individual]) -> float:
@@ -145,7 +145,7 @@ class GeneticKnapsack:
             if current.fitness > best.fitness:
                 best = current.copy()
 
-            #print(f"Gen {gen}: Best fitness = {current.fitness}, Avg fitness = {self.evaluate_population(population):.2f}, Best weight = {current.sum_weight}")
+            # print(f"Gen {gen}: Best fitness = {current.fitness}, Avg fitness = {self.evaluate_population(population):.2f}, Best weight = {current.sum_weight}")
 
         selected_costs = self.costs[best.genes == 1]
         selected_weights = self.weights[best.genes == 1]
