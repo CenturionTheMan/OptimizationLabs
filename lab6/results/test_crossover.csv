@@ -1,0 +1,4 @@
+Rep,N,CrossoverMethod,SolutionCost,Solution Weight
+0,50,SinglePoint,237,154
+0,50,TwoPoint,206,133
+0,100,SinglePoint,339,270
