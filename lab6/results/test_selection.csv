@@ -1,2 +1,14 @@
 Rep,N,SelectionMethod,SolutionCost,Solution Weight
 0,50,Tournament,210,138
+0,50,Tournament x 10,234,140
+0,50,Tournament x 30,206,133
+0,50,Roulette,197,134
+0,100,Tournament,397,266
+0,100,Tournament x 10,379,272
+0,100,Tournament x 30,388,264
+0,100,Roulette,392,283
+0,150,Tournament,598,413
+0,150,Tournament x 10,599,421
+0,150,Tournament x 30,566,427
+0,150,Roulette,620,418
+0,200,Tournament,823,523
