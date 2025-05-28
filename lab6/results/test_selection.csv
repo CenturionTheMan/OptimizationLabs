@@ -1,14 +1,37 @@
 Rep,N,SelectionMethod,SolutionCost,Solution Weight
-0,50,Tournament,210,138
-0,50,Tournament x 10,234,140
-0,50,Tournament x 30,206,133
-0,50,Roulette,197,134
-0,100,Tournament,397,266
-0,100,Tournament x 10,379,272
-0,100,Tournament x 30,388,264
-0,100,Roulette,392,283
-0,150,Tournament,598,413
-0,150,Tournament x 10,599,421
-0,150,Tournament x 30,566,427
-0,150,Roulette,620,418
-0,200,Tournament,823,523
+0,50,Tournament,224,123
+0,50,Roulette,219,144
+0,100,Tournament,378,259
+0,100,Roulette,383,267
+0,150,Tournament,643,391
+0,150,Roulette,575,410
+0,200,Tournament,787,520
+0,200,Roulette,795,554
+0,250,Tournament,929,695
+0,250,Roulette,912,646
+0,300,Tournament,1114,862
+0,300,Roulette,1017,805
+1,50,Tournament,214,141
+1,50,Roulette,220,133
+1,100,Tournament,379,270
+1,100,Roulette,399,269
+1,150,Tournament,581,396
+1,150,Roulette,576,373
+1,200,Tournament,733,554
+1,200,Roulette,762,588
+1,250,Tournament,998,697
+1,250,Roulette,870,682
+1,300,Tournament,1142,842
+1,300,Roulette,951,842
+2,50,Tournament,195,140
+2,50,Roulette,230,139
+2,100,Tournament,410,288
+2,100,Roulette,412,296
+2,150,Tournament,575,389
+2,150,Roulette,594,415
+2,200,Tournament,737,524
+2,200,Roulette,744,544
+2,250,Tournament,958,710
+2,250,Roulette,870,700
+2,300,Tournament,1054,791
+2,300,Roulette,1019,843
